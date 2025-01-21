@@ -1,202 +1,242 @@
 body {
-    text-align: center;
-    font-family: Arial, sans-serif;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-size: 16px;
 }
 
 .heading {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-top: 1rem;
-    text-transform: uppercase;
-    background: linear-gradient(135deg, #ff6f61, #d63031, #c0392b);
-    background-clip: text;
-    -webkit-background-clip: text;
-    /* color: rgb(39, 44, 48);
-    text-shadow: 2px 2px 6px rgba(211, 34, 34, 0.6); */
-    color: rgb(39, 44, 48) ;
-    text-shadow: 2px 2px 6px rgba(217, 12, 12, 0.6); 
-    animation: pulse 2s infinite;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #ff6f61, #d63031, #c0392b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgb(39, 44, 48);
+  text-shadow: 2px 2px 6px rgba(217, 12, 12, 0.6);
+  animation: pulse 2s infinite;
 }
 
 .start {
-    font-size: 2.2rem;
-    font-weight: bold;
-    margin: 0.3rem 0;
-    background: linear-gradient(135deg, #1dd1a1, #10ac84);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    letter-spacing: 1px;
-    animation: bounce 1.5s infinite ease-in-out;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.3rem 0;
+  background: linear-gradient(135deg, #1dd1a1, #10ac84);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  letter-spacing: 1px;
+  animation: bounce 1.5s infinite ease-in-out;
 }
 
 .scoree {
-    color: #ffa502;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    border: 2px solid #ffa502;
-    border-radius: 8px;
-    background: linear-gradient(135deg, #2c2c2c, #000000);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  color: #ffa502;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 2px solid #ffa502;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #2c2c2c, #000000);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .btn {
-    height: 200px;
-    width: 200px;
-    border-radius: 20%;
-    border: 10px solid black;
-    margin: 1rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 20%;
+  border: 10px solid black;
+  margin: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#startBtn {
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  width: auto;
+  height: auto;
+  display: block;
+  background-color: rgb(36, 35, 35);
+  color: green;
+  border: 2px solid #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
 }
 
 .yellow {
-    background-color: #f1c40f;
+  background-color: #f1c40f;
 }
 
 .red {
-    background-color: #c0392b;
+  background-color: #c0392b;
 }
 
 .green {
-    background-color: #27ae60;
+  background-color: #27ae60;
 }
 
 .blue {
-    background-color: #2980b9;
+  background-color: #2980b9;
 }
 
 .flash {
-    background-color: white;
+  background-color: white;
 }
 
 .userFlash {
-    background-color: green;
+  background-color: green;
 }
 
 .btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 }
 
 .yellow:hover {
-    background-color: #f39c12;
+  background-color: #f39c12;
 }
 
 .red:hover {
-    background-color: #e74c3c;
+  background-color: #e74c3c;
 }
 
 .green:hover {
-    background-color: #2ecc71;
+  background-color: #2ecc71;
 }
 
 .blue:hover {
-    background-color: #3498db;
+  background-color: #3498db;
 }
 
-/* @keyframes pulse {
-    0% {
-        text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 87, 51, 0.8);
-    }
-    50% {
-        text-shadow: 0 0 15px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 87, 51, 1);
-    }
-    100% {
-        text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 87, 51, 0.8);
-    }
-} */
-
+/* Keyframe Animation */
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-10px);
-    }
-    60% {
-        transform: translateY(-5px);
-    }
-} 
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
 
 /* Media Queries for Responsiveness */
 @media only screen and (max-width: 1200px) {
-    .heading {
-        font-size: 2.6rem;
-    }
+  .heading {
+    font-size: 2rem;
+  }
 
-    .start {
-        font-size: 1.8rem;
-    }
+  .start {
+    font-size: 1.5rem;
+  }
 
-    .scoree {
-        font-size: 1.4rem;
-        padding: 0.4rem 0.8rem;
-    }
+  .scoree {
+    font-size: 1.4rem;
+    padding: 0.4rem 0.8rem;
+  }
 
-    .btn {
-        height: 180px;
-        width: 180px;
-    }
+  .btn {
+    width: 12rem;
+    height: 12rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .heading {
-        font-size: 2.4rem;
-    }
+  .heading {
+    font-size: 2rem;
+  }
 
-    .start {
-        font-size: 1.6rem;
-    }
+  .start {
+    font-size: 1.4rem;
+  }
 
-    .scoree {
-        font-size: 1.3rem;
-        padding: 0.4rem 0.8rem;
-    }
+  .scoree {
+    font-size: 1.3rem;
+    padding: 0.4rem 0.8rem;
+  }
 
-    .btn {
-        height: 150px;
-        width: 150px;
-    }
+  .btn {
+    width: 8rem;
+    height: 8rem;
+  }
 
-    .btn-container {
-        flex-direction: row; 
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
+  .btn-container {
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+
+  #startBtn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    width: auto;
+    height: auto;
+    display: block;
+    background-color: rgb(36, 35, 35);
+    color: green;
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 1rem auto;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-    .heading {
-        font-size: 1.8rem;
-    }
+  .heading {
+    font-size: 1.4rem;
+  }
 
-    .start {
-        font-size: 1.4rem;
-    }
+  .start {
+    font-size: 0.8rem;
+  }
 
-    .scoree {
-        font-size: 1.2rem;
-        padding: 0.3rem 0.6rem;
-    }
+  .scoree {
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+  }
 
-    .btn {
-        height: 120px;
-        width: 120px;
-    }
+  .btn {
+    width: 6rem;
+    height: 6rem;
+  }
 
-    .btn-container {
-        flex-direction: column; /* Stacks buttons vertically */
-        justify-content: center;
-    }
+  .btn-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  #startBtn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    width: auto;
+    height: auto;
+    display: block;
+    background-color: rgb(36, 35, 35);
+    color: green;
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 1rem auto;
+  }
 }
