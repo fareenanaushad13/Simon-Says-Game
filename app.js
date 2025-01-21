@@ -3,12 +3,12 @@ let userSeq = [];
 
 let btns = ["yellow", "red", "blue", "green"];
 let sounds = {
-  yellow: "sounds/yellow.mp3",
-  red: "sounds/red.mp3",
-  blue: "sounds/blue.mp3",
-  green: "sounds/green.mp3",
-  wrong: "sounds/wrong.mp3",
-};
+    yellow: "Sounds/yellow.mp3",
+    red: "Sounds/red.mp3",
+    blue: "Sounds/blue.mp3",
+    green: "Sounds/green.mp3",
+    wrong: "Sounds/wrong.mp3",
+  };
 
 let started = false;
 let level = 0;
